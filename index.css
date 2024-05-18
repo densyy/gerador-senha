@@ -1,74 +1,167 @@
+/* --- Normalize ---- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--cor-cinza-1);
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: var(--cor-cinza-1);
+  scroll-behavior: smooth;
+}
+body.bloquear {
+  overflow: hidden !important;
+}
+::selection {
+  background-color: #27c9ff85;
+}
+a,img,svg,button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.0);
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -o-user-select: none;
+}
+a {
+  background-color: transparent;
+  cursor: pointer;
+}
+img {
+  border-style: none;
+}
+button {
+  font-family: inherit;
+  line-height: 1;
+  margin: 0;
+  -moz-appearance: none !important;
+  -webkit-appearance: button;
+  appearance: button;
+  text-transform: none;
+  overflow: visible;
+  cursor: pointer;
+}
+button * {
+  pointer-events: none;
+}
+input {
+  font-family: inherit;
+  line-height: 1;
+  -moz-appearance: none !important;
+  appearance: none;
+  overflow: visible;
+}
+textarea {
+  font-family: inherit;
+  line-height: 1;
+  -moz-appearance: none !important;
+  appearance: none;
+  overflow: auto;
+}
+[type="button"] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+}
+[hidden] {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ---- Root ---- */
+
 :root {
     --color-1: #2F3E46;
     --color-5: #E07A5F;
   }
-  
+
   .flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
   /* ---- Body ---- */
-  
+
   body {
     font-family: Roboto;
     color: var(--color-1);
   }
-  
+
   .wrapper {
     background-color: var(--color-5);
     min-height: 100vh;
     width: 100%;
   }
-  
+
   /* ---- Button ---- */
-  
+
   button {
     appearance: none;
     padding: 10px 20px;
     margin: 1px solid red;
     border: 0;
-    
+
     border-radius: 8px;
     font-size: 1.2rem;
     cursor: pointer;
-    
+
     background-color: var(--color-1);
     color: var(--color-5);
   }
-  
+
   button:active,
   button:focus {
     outline: none;
   }
-  
+
   button:hover {
     filter: brightness(1.2);
   }
-  
+
   /* ---- Main ---- */
-  
+
   div.main div.actions {
     flex-direction: row;
   }
-  
+
   div.main h1 {
     font-size: 2.2rem;
     margin-bottom: 20px;
   }
-  
+
   /* ---- Gerar ---- */
-  
+
   div.main div.gerar {
     padding: 20px;
     border: 1px solid var(--color-1);
     border-radius: 8px;
     margin-right: 20px;
   }
-  
+
   div.main div.gerar p {
     margin-bottom: 15px;
   }
-  
