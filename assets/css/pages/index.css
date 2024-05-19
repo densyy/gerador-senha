@@ -38,3 +38,17 @@ div.main div.gerar {
 div.main div.gerar p {
   margin-bottom: 15px;
 }
+
+/* ---- Mobile ---- */
+
+@media (max-width: 700px) {
+
+  div.main div.actions {
+    flex-direction: column;
+  }
+
+  div.main div.gerar {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
