@@ -30,13 +30,14 @@ div.main h1 {
 
 div.main div.gerar {
   padding: 20px;
-  border: 1px solid var(--color-1);
-  border-radius: 8px;
+  background-color: var(--color-1);
+  border-radius: 15px;
   margin-right: 20px;
 }
 
 div.main div.gerar p {
   margin-bottom: 15px;
+  color: var(--color-5);
 }
 
 /* ---- Mobile ---- */
