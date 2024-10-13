@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="HandheldFriendly" content="true">
+<html lang="pt-br" class="sl-theme-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/dark.css"/>
+  <link rel="stylesheet" href="./assets/css/index.css"/>
+</head>
 
-    <link href="./assets/css/pages/index.css" rel="stylesheet">
-  </head>
-  <body>
+<body class="flex">
 
-    <div class="wrapper flex">
-      <div class="main flex">
-        <h1>Gerador de Senhas</h1>
-
-        <div class="actions flex">
-          <div class="gerar flex">
-            <p>Formato:</p>
-            <p>aaaa-aaaa-aaaa-aaaa</p>
-            <button type="button" id="tipo1">Gerar</button>
-          </div>
-
-          <div class="gerar flex">
-            <p>Formato:</p>
-            <p>A1AAA1A1AA1AAA1A1AA1AAA1</p>
-            <button type="button" id="tipo2">Gerar</button>
-          </div>
-        </div>
-
+  <div class="container flex">
+    <div class="container-1 flex">
+      <h1>GERADOR DE SENHA</h1>
+    </div>
+    <div class="container-2 flex">
+      <div class="group-1">
+        <p>Selecione o formato da senha e clique no botão gerar</p>
+      </div>
+      <div class="group-2 flex">
+        <sl-input placeholder="####-####-####-####" readonly></sl-input>
+      </div>
+      <div class="group-3">
+        <sl-radio-group label="Selecione o formato da senha" name="formats" value="1">
+          <sl-radio value="1">Formato 1</sl-radio>
+          <sl-radio value="2">Formato 2</sl-radio>
+        </sl-radio-group>
+      </div>
+      <div class="group-4 flex">
+        <sl-button variant="success" onclick="gerar()">GERAR SENHA</sl-button>
+        <sl-button variant="default" onclick="copiar()">
+          <sl-icon name="copy"></sl-icon>
+        </sl-button>
+        <sl-button variant="default" onclick="dialog()">
+          <sl-icon name="info-lg"></sl-icon>
+        </sl-button>
       </div>
     </div>
+  </div>
 
-    <script src="./assets/js/index.js"></script>
-
-  </body>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
 </html>
