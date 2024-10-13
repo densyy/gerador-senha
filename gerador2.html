@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="sl-theme-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/dark.css" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+
+<body class="flex">
+  <div class="container flex">
+    <div class="container-1 flex">
+      <h1>GERADOR DE SENHA</h1>
+    </div>
+    <div class="container-2 flex">
+      <div class="group-1">
+        <p>Selecione o formato da senha e clique no botão gerar</p>
+      </div>
+      <div class="group-2 flex">
+        <sl-input placeholder="####-####-####-####" readonly></sl-input>
+      </div>
+      <div class="group-3">
+        <sl-radio-group label="Selecione o formato da senha" name="formats" value="1">
+          <sl-radio value="1">Formato 1</sl-radio>
+          <sl-radio value="2">Formato 2</sl-radio>
+        </sl-radio-group>
+      </div>
+      <div class="group-4 flex">
+        <sl-button variant="success">GERAR SENHA</sl-button>
+        <sl-button variant="default">
+          <sl-icon name="copy"></sl-icon>
+        </sl-button>
+        <sl-button variant="default">
+          <sl-icon name="info-lg"></sl-icon>
+        </sl-button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+</body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+
+  body {
+    min-height: 100vh;
+    font-family: var(--sl-font-sans);
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 768px;
+    height: auto;
+  }
+
+  .container-1 {
+    background-color: var(--sl-color-neutral-50);
+    width: 100%;
+    padding: var(--sl-spacing-large);
+    margin-bottom: var(--sl-spacing-x-large);
+    border-radius: var(--sl-border-radius-large);
+  }
+
+  .container-2 {
+    background-color: var(--sl-color-neutral-50);
+    width: 100%;
+    padding: var(--sl-spacing-3x-large);
+    border-radius: var(--sl-border-radius-large);
+  }
+
+  .group-2 {
+    margin-top: var(--sl-spacing-x-large);
+  }
+
+  .group-3 {
+    margin-top: var(--sl-spacing-2x-large);
+  }
+
+  .group-3 sl-radio-group sl-radio {
+    margin-top: 5px;
+  }
+
+  .group-4 {
+    margin-top: var(--sl-spacing-3x-large);
+    flex-direction: row;
+  }
+
+  .group-4 sl-button {
+    margin-right: var(--sl-spacing-small);
+  }
+
+  .group-4 sl-button:nth-of-type(3) {
+    margin-right: 0px;
+  }
+
+</style>
