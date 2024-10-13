@@ -1,13 +1,25 @@
 # Gerador de Senha
 
 ### Descrição
-O Gerador de Senhas é um criador de senhas aleatórias que oferece dois formatos:
 
-Formato 1: senhas de 20 caracteres com letras minúsculas e hífens, que são inseridos a cada grupo de 4 letras.
+Se você está procurando um gerador de senhas, já deve saber a importância de usar senhas seguras, especialmente com o avanço de hardwares poderosos e a chegada futura da computação quântica.
 
-Formato 2: senhas de 24 caracteres com letras maiúsculas e números.
+Pensando nisso, desenvolvi um gerador altamente seguro, ideal para ser usado com o algoritmo bcrypt. Mesmo com os avanços tecnológicos, incluindo a computação quântica, essas senhas continuarão praticamente impossíveis de serem adivinhadas.
 
-Esta ferramenta foi desenvolvida para ser de rápido acesso, portanto, não permite customização. As senhas geradas são seguras e podem ser usadas no dia a dia sem problemas.
+O Gerador de Senhas funciona com 2 formatos:
 
-### Link
+#### Formato 1
+  - contém 16 caracteres aleatórios (letras maiúsculas e números).
+  - separado em grupos de 4, divididos com hífen, totalizando 20 caracteres.
+  - Para quebrar com uma RTX 4060 levaria 25 quatrilhões de anos.
+  - Para quebrar com computação quântica levaria 252 mil anos.
+
+#### Formato 2:
+  - 20 caracteres aleatórios (letras maiúsculas, minúsculas e números).
+  - separado em grupos de 5, divididos com hífen, totalizando 24 caracteres.
+  - Para quebrar com uma RTX 4060 levaria 2 octilhões de anos.
+  - Para quebrar com computação quântica levaria 2 sextilhões de anos.
+
+
+#### Link
 https://password.densyy.com/
