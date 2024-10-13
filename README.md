@@ -20,6 +20,7 @@ O Gerador de Senhas funciona com 2 formatos:
   - Para quebrar com uma RTX 4060 levaria 2 octilhões de anos.
   - Para quebrar com computação quântica levaria 2 sextilhões de anos.
 
+![Image](./assets/images/screeshot.png)
 
 #### Link
 https://password.densyy.com/
