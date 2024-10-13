@@ -76,3 +76,17 @@ body {
   top: 20px;
   right: 20px;
 }
+
+/* ---- Mobile ---- */
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+}
